@@ -1,0 +1,116 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #6b3f2b;
+    color: white;
+}
+
+/* Statistik */
+.stats {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Table */
+.table-box {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #ddd;
+}
+
+/* FORM TAMBAH MENU */
+.form-container {
+    width: 350px;
+    margin: 80px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #6b3f2b;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: #6b3f2b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #4e2c1d;
+}
+
+.back {
+    margin-top: 10px;
+    background: gray;
+}
+.form-container img {
+    margin-top: 10px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.qty {
+    display: flex;
+    align-items: center;      /* 🔥 bikin sejajar vertikal */
+    justify-content: center;  /* 🔥 posisi tengah */
+    gap: 10px;                /* jarak antar elemen */
+}
+
+.qty button {
+    border-radius: 50%;
+    background: #6b3f2b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,107 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #6b3f2b, #a67c52);
+    height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+/* CONTAINER */
+.reservasi-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 60px;
+    padding: 20px;
+}
+
+/* LEFT TEXT */
+.left {
+    color: white;
+    max-width: 300px;
+}
+
+.left h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* FORM BOX */
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6b3f2b;
+}
+
+/* INPUT */
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+    border-color: #6b3f2b;
+}
+
+/* BUTTON */
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background: #6b3f2b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+    background: #4e2c1d;
+}
+
+/* RESPONSIVE (HP) */
+@media (max-width: 768px) {
+    .reservasi-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left {
+        max-width: 100%;
+    }
+}

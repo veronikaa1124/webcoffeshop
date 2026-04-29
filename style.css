@@ -1,0 +1,152 @@
+/* FONT & RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #3e2723, #6d4c41);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar button {
+    background: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background: #ddd;
+}
+
+/* CONTAINER */
+.container {
+    padding: 50px;
+}
+
+/* GRID */
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* CARD PREMIUM */
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    color: white;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.card h3 {
+    margin: 10px;
+}
+
+.card p {
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* ACTION */
+.action {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.btn-edit {
+    background: orange;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+}
+
+.btn-hapus {
+    background: crimson;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+}
+
+/* SIDEBAR USER */
+.sidebar {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #6b3f2b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* SELECT */
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
